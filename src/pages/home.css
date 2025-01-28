@@ -1,0 +1,63 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f9; 
+    margin: 0;
+    padding: 0;
+    color: #333333; 
+}
+
+/* Hero section styles */
+.hero-bg {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-color: #d4e2d4; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 100px 0;
+    background-blend-mode: overlay; 
+    background-image: url('https://your-image-url.com'); 
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2e2e2e; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+    animation: fadeInAnimation 1s forwards;
+}
+
+.hero-subtext {
+    font-size: 1.2rem;
+    color: #2e2e2e; 
+    margin-top: 20px;
+}
+
+/* Fade-in animation for elements */
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Accessibility-specific styles for links */
+a {
+    color: #0066cc; 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 3px solid #ffcc00; 
+    background-color: #333; 
+}
+
+/* Accessibility: contrast for the hero title */
+.hero-title, .hero-subtext {
+    color: #333333; 
+}

@@ -1,0 +1,49 @@
+/* Navbar styles for mobile and desktop */
+.navbar-container {
+  background-color: #005f8d; 
+  color: white; 
+  padding: 15px 30px; 
+  text-align: center;
+  font-size: 1.2rem; 
+  font-weight: bold; 
+}
+
+.navbar-container a {
+  color: white; 
+  text-decoration: none; 
+  padding: 10px 20px; 
+  font-size: 1.1rem; 
+}
+
+.navbar-container a:hover {
+  text-decoration: underline; 
+  background-color: #004a72; 
+  border-radius: 5px; 
+}
+
+/* Focus state for accessibility */
+.navbar-container a:focus {
+  outline: 3px solid #ffcc00; 
+  background-color: #004a72;
+}
+
+.search-input {
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  width: 250px;
+  margin-left: auto;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #005f8d; 
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 10px;
+    text-align: left;
+  }
+}

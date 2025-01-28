@@ -1,0 +1,39 @@
+/* src/components/footer.css */
+
+.footer-container {
+    background-color: #4CAF50; 
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem; 
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+    font-size: 14px; 
+  }
+  
+  .footer-content p:first-child {
+    font-weight: bold; 
+  }
+  
+  .footer-container a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+  }
+  
+  .footer-container a:hover {
+    text-decoration: underline; 
+    color: #ffcc00; 
+  }
+  
+  /* Focus state for accessibility */
+  .footer-container a:focus {
+    outline: 3px solid #ffcc00; 
+    background-color: #333; 
+  }
+  
