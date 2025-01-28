@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './savedverses.css';
 import Hero from '../components/hero'; 
+import VerseCard from '../components/versecard'; // New component
 
 function SavedVerses({ searchQuery }) {
   const [verses, setVerses] = useState([]);
@@ -49,16 +50,13 @@ function SavedVerses({ searchQuery }) {
         {filteredVerses.length > 0 ? (
           <div className="verses-list">
             {filteredVerses.map((verse, index) => (
-              <div key={index} className="verse-card">
-                <div className="verse-card-content">
-                  <p className="verse-text">{verse}</p>
-                  {index >= defaultVerses.length && (
-                    <button onClick={() => handleDelete(index)} className="delete-button">
-                      Delete
-                    </button>
-                  )}
-                </div>
-              </div>
+              <VerseCard
+                key={index}
+                verse={verse}
+                index={index}
+                defaultVersesLength={defaultVerses.length}
+                onDelete={handleDelete}
+              />
             ))}
           </div>
         ) : (
